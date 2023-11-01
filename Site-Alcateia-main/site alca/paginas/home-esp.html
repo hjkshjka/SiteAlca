@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta charset="UFT -8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="inicial.css"/>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"/>
+    <title>DubsolHub</title>
+    <link rel="shortcut icon" href="../src/img/favicon.ico" type="image/x-icon" />
+</head>
+<body> 
+    <header>
+        <div class="navbar" id="navbar"> <!--header-->
+        <div class="logo-header">
+            <a href="index.html" class="logo-main">
+            <img src="../src/img/logo alca.png" alt="logo" class="logo">
+            </a>
+        </div>
+        <ul class="links">
+            <li><a href="hero">Comezo</a></li>
+            <li><a href="http://alcateiaaudiovisual.com.br/">Sobre Nosotros</a></li>
+            <li><a href="services">Servicios</a></li>
+            <li><a href="contact">Contactos</a></li>
+        </ul>
+        
+    
+        <a href="../login/login.html" class="action_btn">Login</a>
+      
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+        <div class="selecao_idioma">
+                <a href="home.html">
+                    <img src="../src/img/brazil.svg" alt="Portuguese" width="32px" id="porImg" class="bandeiras pointer active-language" onclick= "muda_idioma('por',this)">
+                </a>
+                &nbsp;&nbsp;
+                <a href="home-en.html">
+                    <img src="../src/img/USA.svg" alt="English" width="32px" id="enImg" class="bandeiras pointer" onclick="muda_idioma('en',this)">
+                </a>
+                &nbsp;&nbsp;
+                <a href="home-esp.html">
+                    <img src="../src/img/esp.png" alt="Espanhol" width="32px" id="espImg" class="bandeira pointer" onclick="muda_idioma('esp',this)">
+                </a>
+        </div>
+        
+        <script type="text/javascript">
+
+            $( document ).ready(function() {
+                let lingua = 'por';
+                switch (lingua) {
+                    case por: 
+                        $("#porImg").addClass("idioma_ativo");
+                        break;
+                    case 'eng':
+                        $("#engImg").addClass("idioma_ativo");
+                        break;
+                    case 'esp': 
+                        $("espImg").addClass("idioma_ativo");   
+                        break;
+                }
+            });
+
+            function muda_idioma(lingua, obj) {
+                $("idioma").val(lingua);
+                switch (lingua) {
+                    case "por":
+                        window.location.href = "https://www.google.com/";
+                        break;
+                    case "eng":
+                        window.location.href = "https://www.google.com/";
+                        break;
+                    case "esp":
+                        window.location.href = "https://www.google.com/";
+                        break;
+
+                    default:
+                        break;            
+                }
+            }
+        </script>
+
+        <div class="dropdown_menu">
+            <li><a href="hero">Inicio</a></li>
+            <li><a href="http://alcateiaaudiovisual.com.br/" target="_blank">Sobre</a></li>
+            <li><a href="services">Serviços</a></li>
+            <li><a href="contact">Contatos</a></li>
+            <li><a href="login.html" class="login_btn">Login</a></li>
+        </div>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+                }
+        </script>
+    </header>
+
+    <div class="slider">
+        <div class="load">
+        </div>
+    </div>
+         
+    <div class="content">
+        <div class="principal">
+            <h1>DubConnect</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium aut omnis consequuntur corrupti dolorum sequi ea et, rerum quisquam eum voluptas. Nobis omnis, inventore tempore eveniet autem animi voluptatum excepturi.</p>
+            <input type="search" name="search-main-page" placeholder="Encontre aqui seu profissional">
+            <a href="#">
+                <img src="../src/img/search.svg" class="search-btn">
+            </a>
+        </div>
+    </div>    
+</body>
+
+<main>
+</main>
+   
+<footer>
+    <div id="footer-content">
+        <div id="footer-contacts">
+            <div id="footer-logo">
+                <img src="../src/img/logo alca.png" alt="logo-footer" width="75px">
+        </div>
+        
+    <div id="footer-copyright">
+        &#169 2023 all rights reserved 
+    </div> 
+</footer>
+
+</html>
