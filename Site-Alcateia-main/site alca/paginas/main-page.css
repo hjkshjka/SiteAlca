@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Figtree:wght@500&family=Oswald:wght@600&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -6,18 +8,99 @@
 
 .user {
     color: black;
-    display: flex;
-    justify-content: flex-end;
+    width: 60px;
+    height: 60px;
     margin-right: 65px;
     margin-top: 50px;
+    border: grey;
+    box-shadow: 0px 1px 2px ;
+    border-radius: 50%;
+    margin-left: 90%;
+    margin-top: -3%;
+    display: flex;
 }
 
 .logo {
-    color: black;
-    display: flex;
-    margin-left: 50px;
-    margin-top: -20px;   
+
+    margin-left: 60px;
+    margin-top: 20px;
+
 }
+
+.header-icon {
+    display: flex;
+    margin-left: -205%;
+    margin-top: 35%;
+}
+
+.chat, .bell, .cash {
+    margin: 5px;
+}
+
+
+.presentation h1 {
+    font-weight: 900;
+    font-family: 'Figtree', sans-serif;
+    font-size: 65px;
+    margin-left: 5%;
+    margin-top: 8%;
+    
+}
+
+.presentation p {
+    font-size: 20px;
+    margin-left: 5%;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 300;
+}
+
+.presentation img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    margin-left: 70%;
+    margin-top: -23%;
+    margin-bottom: 10%;
+    border-radius: 2%;
+}
+
+.presentation span {
+    color: #17a2b8;
+}
+
+.presentation input {
+    width: 400px;
+    padding: 5px;
+    margin-left: 10%;
+    margin-top: 2%; 
+    
+}
+
+.result-box ul {
+    border-top: 1px solid #999;
+    padding: 15px 10px;
+    width: 394px;
+    margin-left: 10%;
+    box-shadow: 0px 1px 1px grey;
+}
+
+.result-box ul li {
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-family: 'Figtree', sans-serif;
+    
+}
+
+.result-box ul li:hover {
+    background-color: #e9f3ff;
+}
+
+.text {
+    margin-top: 10%;
+}
+
 
 .card-container {
     position: relative;

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Oswald:wght@600&display=swap');
 
 * {
     margin: 0;
@@ -281,11 +282,20 @@ header {
     
 }
 
+.principal span {
+    color: #17a2b8;
+}
+
 .principal h1 {
     font-size: 70px;
     margin-bottom: 20px;
     font-family: 'Oswald', sans-serif;
 
+}
+
+.principal h1, span{
+    font-family: 'Figtree', 'Figtree-fallback', 'Figtree-fallback-android', 'Noto Sans', 'NotoSans-fallback', 'NotoSans-fallback-android', sans-serif;
+    font-weight: 700;
 }
 
 .principal p {
@@ -443,6 +453,7 @@ main {
 
 }
 
+
 #footer-content {
     background-color: #fff;
     box-shadow: grey;
@@ -506,30 +517,34 @@ main {
     }
     
     40% {
-        background-image: url('');
+        background-image: url('../src/img/cinema.png');
     }
 
     40.01% {
-        background-image: url('');
+        background-image: url('../src/img/cinema.png');
     }
     
     60% {
-        background-image: url('');
+        background-image: url('../src/img/fundoalca.png');
     }
 
     60.01% {
-        background-image: url('');
+        background-image: url('../src/img/fundoalca.png');
     }
     
     80% {
-        background-image: url('');
+        background-image: url('../src/img/fundo2.png');
     }
 
     80.01% {
-        background-image: url('');
+        background-image: url('../src/img/fundo2.png');
     }
 
     100% {
-        background-image: url('');
+        background-image: url('../src/img/fundo2.png');
+    }
+
+    100.01% {
+        background-image: url('../src/img/fundo.png');
     }
 }

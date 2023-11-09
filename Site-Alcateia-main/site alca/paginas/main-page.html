@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DubHub</title>
+    <title>Dubber</title>
 
     <link rel="stylesheet" href="../paginas/main-page.css">
     <link rel="shortcut icon" href="../src/img/favicon.ico" type="image/x-icon" />
@@ -12,18 +12,44 @@
 <body>
 
     <header>
-        <div class="user" >
-        Perfil
-        </div>
-
         <div class="logo">
-        logo
+        <a href="../paginas/main-page.html"><img src="../src/img/logoDub.png" width="150px"></a>
         </div>
+        
+        <div class="user">
+            <a><img></img></a>
+            <div class="header-icon">
+                <a href="#"><span class="cash"><img src="../src/img-fav/cash.svg" width="31px"></span></a>
+                <a href="#"><span class="bell"><img src="../src/img-fav/bell.svg" width="31px"></span></a>
+                <a href="#"><span class="chat"><img src="../src/img-fav/chat.svg" width="30px"></span></a>
+            </div>
+    </div>
     </header>
 
     <br>
+    <br>
     <br>    
 
+
+    <div class="presentation">
+       
+        <h1>Encontre agora tudo <br> <span>para sua produção</span></h1>
+        <br>
+        <p>Encontre aqui os melhores profissionais para <br> cada área da produção e 
+            comece agora, não perca tempo!
+        </p>
+        <div class="input-box">
+            <input type="text" id="input-box" placeholder="Qual o idioma que deseja?" autocomplete="on">
+            <div class="result-box">
+            </div>
+        </div>
+        <div class="img-presen"><img src="../src/img-fav/dublador.jpg">
+        </div>
+    </div>
+
+    <br>
+    <br>
+
     <div class="card-container">
         <div class="card">
             <img src="../src/img/briggs.jpg" alt="image" />
@@ -47,6 +73,6 @@
         </div>
     </div>
 
-    
+<script src="autocomplete.js"></script>
 </body>
 </html>
