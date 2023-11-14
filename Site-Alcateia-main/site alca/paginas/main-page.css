@@ -55,10 +55,10 @@
 }
 
 .presentation img {
-    width: 300px;
+    width: 400px;
     height: 500px;
     object-fit: cover;
-    margin-left: 70%;
+    margin-left: 65%;
     margin-top: -23%;
     margin-bottom: 10%;
     border-radius: 2%;
@@ -68,20 +68,27 @@
     color: #17a2b8;
 }
 
-.presentation input {
+.langs select {
     width: 400px;
     padding: 5px;
     margin-left: 10%;
     margin-top: 2%; 
+    border: 1px solid;
     
 }
+
+.result-box {
+    max-height: 250px;
+    
+}
+
 
 .result-box ul {
     border-top: 1px solid #999;
     padding: 15px 10px;
     width: 394px;
     margin-left: 10%;
-    box-shadow: 0px 1px 1px grey;
+    box-shadow: 0px 1px px grey;
 }
 
 .result-box ul li {
@@ -101,6 +108,27 @@
     margin-top: 10%;
 }
 
+.filter {
+    width: 1300px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px  gray;
+    display: flex;
+    margin-left: 1.5%;
+}
+
+#filter-container {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
 
 .card-container {
     position: relative;
@@ -117,7 +145,6 @@
     left: 35%;
     display: flex;
     align-items: center;
-
 }
 
 .card img {
@@ -126,6 +153,7 @@
     object-fit: cover;
     margin-left: 2%;
     border-radius: 5px;
+    margin-top: 10%;
 }
 
 .card h1 {
@@ -136,7 +164,8 @@
 }
 
 .hover-info {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 0;
     left: 140%;
@@ -147,9 +176,10 @@
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     border-radius: 5px;
+    transition: opacity 0.3s, visibility 0.3s;
 }
 
 .card-container:hover .hover-info {
-    display: block;
-
+    opacity: 1;
+    visibility: visible;
 }

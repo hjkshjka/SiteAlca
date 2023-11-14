@@ -1,37 +1,41 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let availableKeywords = [
-        'Espanhol',
-        'Inglês',
-        'Português Brasileiro',
-        'Português Portugal',
-    ];
+let availableKeyword = [
+    'Portugês',
+    'Español',
+    'Inglês',
+    'Français',
+    'Polski',
+    'Deutsch',
+];
 
-    const resultBox = document.querySelector(".result-box");
-    const inputBox = document.querySelector(".input-box");
+const resultsBox = document.querySelector(".result-box");
+const inputBox = document.getElementById("input-box");
 
-    if (inputBox && resultBox) {
-        inputBox.addEventListener("input", function () {
-            let result = [];
-            let input = inputBox.value;
-
-            if (input !== undefined && input.trim) { // Verifica se input não é undefined e tem o método trim
-                input = input.trim(); // Use trim() para remover espaços em branco
-
-                if (input.length) {
-                    result = availableKeywords.filter((keyword) => {
-                        return keyword.toLowerCase().includes(input.toLowerCase());
-                    });
-                    console.log(result);
-                }
-            }
-            display(result);
+inputBox.onkeyup = function(){
+    let result = [];
+    let input = inputBox.value;
+    if(input.length){
+        result = availableKeyword.filter((keyword)=>{
+            return keyword.toLowerCase().includes(input.toLowerCase());
         });
+        console.log(result);
     }
 
-    function display(result) {
-        const content = result.map((list) => {
-            return "<li>" + list + "</li>";
-        }).join(""); // Use join para transformar o array em uma string
-        resultBox.innerHTML = "<ul>" + content + "</ul>";
+    display(result);
+
+    if (!result.length){
+        resultsBox.innerHTML = '';
     }
-});
+}
+
+function display(result){
+    const content = result.map((list)=>{
+        return "<li onclick=selectInput(this)>" + list + "</li>"; 
+    });
+
+    resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
+}
+
+function selectInput(list){
+    inputBox.value = list.innerHTML; 
+    resultsBox.innerHTML = '';   
+}

@@ -38,14 +38,47 @@
         <p>Encontre aqui os melhores profissionais para <br> cada área da produção e 
             comece agora, não perca tempo!
         </p>
-        <div class="input-box">
-            <input type="text" id="input-box" placeholder="Qual o idioma que deseja?" autocomplete="on">
-            <div class="result-box">
-            </div>
-        </div>
-        <div class="img-presen"><img src="../src/img-fav/dublador.jpg">
+        <div class="langs">
+           <label for="lang">
+                <select>
+                    <option value="all">Selecione sua linguagem</option>
+                    <option value="port">Português</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="pol">Polski</option>
+                </select>
+           </label>
+        <div class="img-presen">
+            <img src="../src/img-fav/dublador.jpg">
         </div>
     </div>
+        
+    <div class="filter">
+        <label for="category"></label>
+        <select id="category">
+            <option value="all">Todos</option>
+            <option value="dublador">Dubladores</option>
+            <option value="produtor">Produtores</option>
+            <option value="diretor">Diretores</option>
+        </select>
+        
+        <label for="country"></label>
+        <select id="country">
+            <option value="Brasil">Brasil</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+            <option value="Espanha">Espanha</option>
+            <option value="China">China</option>
+        </select>
+
+        <select id="location">
+            <option value="local">Local de trabalho</option>
+            <option value="studio">Presencial</option>
+            <option value="home">Remoto</option>
+            <option value="both">Hibrido</option>
+        </select>
+
+    </div>
+
 
     <br>
     <br>
