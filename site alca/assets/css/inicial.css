@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Oswald:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    height: 100vh;
+    background-color: #eeebeb;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(124, 122, 122);
+    font-size: 1.3rem;
+}
+
+a:hover {
+    color:#17a2b8;
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+}
+
+.navbar{
+    background-color: #fff;
+    padding: 0 5%;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;    
+    
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo { 
+    width: 100px;
+    transform: translate(-80%, 5%);
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: #17a2b8;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    flex-direction: row;
+    margin-left: 0.5rem;
+    
+}
+
+.login_btn{
+    background-color:#17a2b8;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+.load {
+    animation: slide 20s;
+}
+
+.slider {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 40s infinite;
+}
+
+.conteudo1 {
+   background-color: #fff;
+   display: flex;
+}
+
+.text-content {
+    width: 35%;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(62, 56, 56);
+}
+
+.text-content h2 {
+    font-size: 50px;
+    margin-top: 5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #17a2b8;
+}
+
+.text-content p {
+    font-size: 25px;
+    margin-left: 5%;
+    color: grey;
+}
+
+.card1 {
+    box-shadow: 0px 2px 8px gray ;
+    border-radius: 5px ;
+    width: 450px;
+    height: 300px;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+.card1 video {
+    width: 450px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.content2 {
+    background-color: #fff;
+    display: flex;
+}
+
+.textcontent2 {
+    width: 35%;
+    margin-left: 50%;
+    margin-top: 5%;
+}
+
+.textcontent2 h2 {
+    margin-left: 20%;
+    margin-top: 5%;
+    font-size: 48px;
+    color: #17a2b8;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.textcontent2 p {
+    color: grey;
+    margin-left: 30%;
+    font-size: 25px;
+}
+
+.card2 {
+    box-shadow: 0px 2px 8px gray ;
+    border-radius: 5px ;
+    width: 450px;
+    height: 300px;
+    margin-left: -83%;
+    margin-top: 13%;
+    background-image: url('/site alca/src/img/foto-teste.jpg');
+    background-size: cover;
+    margin-bottom: 1%;
+}
+
+.partner-content {
+    background-color: #17a2b8;
+    height: 25px;
+}
+
+.parceiros {
+    background-color: white;
+}
+
+.container-pt {
+    margin-left: 33%;
+    
+}
+
+.parceiros li {
+    display: inline;
+    margin-left: 10px;   
+}
+
+.parceiros h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    margin-left: 15%;
+    color: #17a2b8;
+}
+
+.parceiros .bd1 {
+    width: 35px;
+    margin-bottom: 6.5%;
+}
+
+.parceiros .bd2 {
+    width: 75px;
+    margin-bottom: 4%;
+   
+}
+
+.parceiros .bd3 {
+    width: 75px;
+    margin-bottom: 4%;
+    margin-left: -10px;
+}
+
+.parceiros .bd4 {
+    width: 45px;
+    margin-bottom: 5.5%;
+   
+}
+
+.parceiros .bd5 {
+    width: 45px;
+    margin-bottom: 5.5%;
+   
+}
+
+.parceiros .bd6 {
+    width: 70px;
+    margin-bottom: 4%;
+    margin-left: -1%;
+   
+}
+
+.parceiros .bd7 {
+    width: 60px;
+    margin-bottom: 6.5%;
+    margin-left: -1%;
+   
+}
+
+
+.principal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.principal span {
+    color: #17a2b8;
+}
+
+.principal h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.principal h1, span{
+    font-family: 'Figtree', 'Figtree-fallback', 'Figtree-fallback-android', 'Noto Sans', 'NotoSans-fallback', 'NotoSans-fallback-android', sans-serif;
+    font-weight: 700;
+}
+
+.principal p {
+    font-size: 20px;    
+}
+
+.principal input {
+    transform: translateY(150%);
+    width: 25rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+.search-btn {
+    width: 3%;
+    height: 3%;
+    border-radius: 10%;
+    transform: translateY(278%);
+
+
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+  }
+  input[type="search"]::-ms-clear {
+    display: none;
+  }
+  input[type="search"]::-ms-reveal {
+    display: none;
+  }
+  
+
+
+/* DROPDOWN MENUS */
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    height: 0;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: #fff;
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu a {
+    color: #fff;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .login_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.multilang {
+    position: relative;
+    font-weight: bold;
+
+}
+
+.multilang a { 
+   color: grey;
+   font-size: 0.8rem;  
+    
+}
+
+.language-selected {
+    display: flex;
+    align-items: center;
+    color: grey;
+    cursor: pointer;
+}
+
+.language-selected:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("brazil.svg");
+    background-size: contain;
+    background-repeat: 10px;
+    margin-right: 10px;
+}
+
+/* CONTEUDO */ 
+
+.text {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.slides-show {
+    height: 500px;
+    width: 900px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 43%;
+    left: 46%;
+    transform: translate(-45%, -39%); 
+    object-fit: cover;
+}
+
+.nav-slides {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+
+
+
+/* FOOTER */
+
+main {
+    height: 100vh;
+    display: none;
+}
+
+.footer {
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 30vh; 
+    flex-shrink: 0;
+    left: 0;
+
+}
+
+
+#footer-content {
+    background-color: #fff;
+    box-shadow: grey;
+}
+
+#footer-copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff; 
+    font-size: 0.4;
+    padding: 0.1rem;
+    font-weight: 90;
+    color: grey;   
+}
+
+
+/* RESPONSIVIDADE */ 
+@media(max-width: 992px){
+    .navbar .links,
+    .navbar .action_btn,
+    .footer, .logo {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .logo {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .logo {
+        display: block;
+    }
+}
+
+@keyframes slide {
+    
+    0% {
+        background-image: url('/site alca/src/img/fundo.png');
+    }
+    
+    20% {
+        background-image: url('/site alca/src/img/fundo.png');
+    }
+
+    20.01% {
+        background-image: url('/site alca/src/img/fundo.png');
+    }
+    
+    40% {
+        background-image: url('/site alca/src/img/fundoalca.png');
+    }
+
+    40.01% {
+        background-image: url('/site alca/src/img/fundoalca.png');
+    }
+    
+    60% {
+        background-image: url('/site alca/src/img/cinema.png');
+    }
+
+    60.01% {
+        background-image: url('/site alca/src/img/cinema.png');
+    }
+    
+    80% {
+        background-image: url('/site alca/src/img/fundo2.png');
+    }
+
+    80.01% {
+        background-image: url('/site alca/src/img/fundo2.png');
+    }
+
+    100% {
+        background-image: url('/site alca/src/img/fundo2.png');
+    }
+
+    100.01% {
+        background-image: url('/site alca/src/img/fundo.png');
+    }
+}

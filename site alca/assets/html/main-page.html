@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubber</title>
+
+    <link rel="stylesheet" href="../css/main-page.css">
+    <link rel="shortcut icon" href="/site alca/src/img/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+    <header>
+        <div class="perfil">
+            <div class="logo">
+            <a href="../html/main-page.html"><img src="/site alca/src/img/logodubsol.png" width="150px"></a>
+        </div>
+
+           
+      
+            <img src="/site alca/src/img/juarez.jpeg" id="user" onclick="toggleMenu()">
+        
+            <div class="menu-wrap" id="subMenu">
+                <div class="menu">
+                    <a href="#" class="links">
+                        <img src="/site alca/src/img-fav/usuario.png" width="25px">
+                        <p>Meu perfil</p>
+                        <span>></span>
+                    </a>
+                    <a href="/site alca/assets/html/casdastro.html" class="links">
+                        <img src="/site alca/src/img-fav/papel.png" width="22px">
+                        <p>Minhas informações</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="links">
+                        <img src="/site alca/src/img-fav/x.png" width="20px">
+                        <p>Sair</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        
+        </div>
+        <script>
+            let subMenu = document.getElementById("subMenu");
+
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu");
+        }
+        </script>
+        <div class="header-icon">
+                <a href="#"><span class="cash"><img src="/site alca/src/img-fav/cash.svg" width="31px"></span></a>
+                <a href="#"><span class="bell"><img src="/site alca/src/img-fav/bell.svg" width="31px"></span></a>
+                <a href="#"><span class="chat"><img src="/site alca/src/img-fav/chat.svg    " width="30px"></span></a>
+        </div>
+    
+    </header>
+
+
+    <div class="presentation">
+       
+        <h1>Encontre agora tudo <br> <span>para sua produção</span></h1>
+        <br>
+        <p>Encontre aqui os melhores profissionais para <br> cada área da produção e 
+            comece agora, não perca tempo!
+        </p>
+        <div class="langs">
+           <label for="lang">
+                <select>
+                    <option value="all">Selecione sua linguagem</option>
+                    <option value="port">Português</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="pol">Polski</option>
+                </select>
+           </label>
+        <div class="img-presen">
+            <img src="/site alca/src/img-fav/dublador.jpg">
+        </div>
+    </div>
+        
+    <div class="filter">
+        <label for="category"></label>
+        <select id="category">
+            <option value="all">Todos</option>
+            <option value="dublador">Dubladores</option>
+            <option value="produtor">Produtores</option>
+            <option value="diretor">Diretores</option>
+        </select>
+        
+        <label for="country"></label>
+        <select id="country">
+            <option value="Brasil">Brasil</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+            <option value="Espanha">Espanha</option>
+            <option value="China">China</option>
+        </select>
+
+        <select id="location">
+            <option value="local">Local de trabalho</option>
+            <option value="studio">Presencial</option>
+            <option value="home">Remoto</option>
+            <option value="both">Hibrido</option>
+        </select>
+
+    </div>
+
+
+
+    <div class="card-container">
+        <div class="card">
+            <img src="/site alca/src/img/briggs.jpg"/>
+            <h1>Guilherme Briggs</h1>
+            <p>Dublador</p>
+        </div>
+        <div class="hover-info">
+            <iframe src="" frameborder="0"  allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <div class="card-container">
+        <div class="card">
+            <img src="/site alca/src/img/briggs.jpg"  />
+            <h1>Guilherme Briggs</h1>
+            <p>Dublador</p>
+        </div>
+        <div class="hover-info">
+            <iframe src="" frameborder="0"  allowfullscreen></iframe>
+        </div>
+    </div>
+    
+<main>
+</main>
+
+<footer>
+      <div id="footer-copyright">
+          &#169 2023 all rights reserved 
+      </div> 
+</footer>
+
+<script src="../js/autocomplete.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta charset="UFT -8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="inicial.css"/>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"/>
+    <title>Dubber</title>
+    <link rel="shortcut icon" href="../src/img/favicon.ico" type="image/x-icon" />
+</head>
+<body> 
+    <header>
+        <div class="navbar" id="navbar"> <!--header-->
+        <div class="logo-header">
+            <a href="index.html" class="logo-main">
+                <img src="../src/img/logoDub.png" alt="logo" class="logo">
+            </a>
+        </div>
+        <ul class="links">
+            <li><a href="hero">Comezo</a></li>
+            <li><a href="http://alcateiaaudiovisual.com.br/">Sobre Nosotros</a></li>
+            <li><a href="services">Servicios</a></li>
+            <li><a href="contact">Contactos</a></li>
+        </ul>
+        
+    
+        <a href="../login/login.html" class="action_btn">Login</a>
+      
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+        <div class="selecao_idioma">
+                <a href="home.html">
+                    <img src="../src/img/brazil.svg" alt="Portuguese" width="32px" id="porImg" class="bandeiras pointer active-language" onclick= "muda_idioma('por',this)">
+                </a>
+                &nbsp;&nbsp;
+                <a href="home-en.html">
+                    <img src="../src/img/USA.svg" alt="English" width="32px" id="enImg" class="bandeiras pointer" onclick="muda_idioma('en',this)">
+                </a>
+                &nbsp;&nbsp;
+                <a href="home-esp.html">
+                    <img src="../src/img/esp.png" alt="Espanhol" width="32px" id="espImg" class="bandeira pointer" onclick="muda_idioma('esp',this)">
+                </a>
+        </div>
+        
+        <script type="text/javascript">
+
+            $( document ).ready(function() {
+                let lingua = 'por';
+                switch (lingua) {
+                    case por: 
+                        $("#porImg").addClass("idioma_ativo");
+                        break;
+                    case 'eng':
+                        $("#engImg").addClass("idioma_ativo");
+                        break;
+                    case 'esp': 
+                        $("espImg").addClass("idioma_ativo");   
+                        break;
+                }
+            });
+
+            function muda_idioma(lingua, obj) {
+                $("idioma").val(lingua);
+                switch (lingua) {
+                    case "por":
+                        window.location.href = "https://www.google.com/";
+                        break;
+                    case "eng":
+                        window.location.href = "https://www.google.com/";
+                        break;
+                    case "esp":
+                        window.location.href = "https://www.google.com/";
+                        break;
+
+                    default:
+                        break;            
+                }
+            }
+        </script>
+
+        <div class="dropdown_menu">
+            <li><a href="hero">Inicio</a></li>
+            <li><a href="http://alcateiaaudiovisual.com.br/" target="_blank">Sobre</a></li>
+            <li><a href="services">Serviços</a></li>
+            <li><a href="contact">Contatos</a></li>
+            <li><a href="login.html" class="login_btn">Login</a></li>
+        </div>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+                }
+        </script>
+    </header>
+
+    <div class="slider">
+        <div class="load">
+        </div>
+    </div>
+         
+    <div class="content">
+        <div class="principal">
+            <h1>Dub<span>ber</span></h1>
+            <br>
+            <p>Tu conexión rápida y segura para una mejor calidad y rapidez en tu producción; trabaja desde donde quieras y con quien desees.</p>
+            <input type="search" name="search-main-page" placeholder="Encontre aqui seu profissional">
+        </div>
+    </div>    
+</body>
+
+<div class="conteudo1">
+
+    <div class="text-content">
+        
+        <br>
+        <h2>Quienes somos?</h2>
+        <br>
+        <p>Somos una empresa que ha introducido una solución de doblaje innovadora en el mercado y ahora queremos facilitar una conexión
+             más fluida entre usted y su producción con nuestros actores de doblaje y nuestro innovador sistema.
+        </p>
+    </div>
+
+    <div class="card1">
+        <div class="cardtop">
+        </div>
+        <div class="mediaCard">
+            <video controls="false">
+                <source src="#">
+            </video>
+        </div>
+    </div>
+    <br>
+</div>    
+<div class="content2">
+    <div class="textcontent2">
+         <br>
+         <h2>Cómo funciona?</h2>
+         <br>
+            <p> Aquí podrás encontrar todas las necesidades para tu producción, desde el actor de doblaje hasta el espacio virtual con todas
+                soporte y seguridad que necesitas.
+         </p>
+     </div>
+     
+     <div class="card2">
+         <div class="cardtop">
+         </div>
+         <div class="mediaCard">
+         </div>
+     </div>
+     <br>
+ </div>
+
+ <div class="partner-content">
+     <br>
+     <div class="parceiros">  
+         <div class="container-pt">
+             <h3>Associates</h3>
+             <ul>
+                 <li><img src="../src/img/netflix-badge.png" class="bd1"></li>
+                 <li><img src="../src/img/paramount partner.png" class="bd2"></li>
+                 <li><img src="../src/img/iyuno partner.jpg" class="bd3"></li>
+                 <li><img src="../src/img/amazon partner.png" class="bd4"></li>
+                 <li><img src="../src/img/deluxe partner.png" class="bd5"></li>
+                 <li><img src="../src/img/TPN badge.png" class="bd6"></li>
+                 <li><img src="../src/img/abinee badge.jpg" class="bd7"></li>
+             </ul>
+         </div>    
+     </div>      
+ </div>
+</body>
+
+<main>
+</main>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<main>
+</main>
+   
+<footer>
+    <div id="footer-content">
+        <div id="footer-contacts">
+            <div id="footer-logo">
+                <img src="../src/img/logoDub.png" alt="logo-footer" width="90px">
+        </div>
+        
+    <div id="footer-copyright">
+        &#169 2023 all rights reserved 
+    </div> 
+</footer>
+
+</html>
