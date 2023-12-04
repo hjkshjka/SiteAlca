@@ -207,6 +207,10 @@
     font-family: 'Kanit', sans-serif;
 }
 
+.pessoal-data-form fieldset {
+    height: 470px;
+}
+
 .foto {
     margin-left: 20%;
     margin-top: -5%;
@@ -229,7 +233,7 @@
 }
 
 .date {
-    margin-left: 25%;
+    margin-left: 23%;
     margin-top: -6.5%;
 }
 
@@ -247,7 +251,7 @@
 }
 
 .etnia {
-    margin-left: 45%;
+    margin-left: 38%;
     margin-top: -5.5%;
 }
 
@@ -265,7 +269,7 @@
 }
 
 .gender {
-    margin-left: 60%;
+    margin-left: 50%;
     margin-top: -5.5%;
 }
 
@@ -282,8 +286,196 @@
     font-weight: bold;
 }
 
+.estado-civil {
+    margin-left: 64%;
+    margin-top: -5.5%;
+}
+
+.estado-civil label {
+    color: #17a2b8;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.estado-civil select {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.tipo-pessoa {
+    margin-left: 77%;
+    margin-top: -5.5%;
+}
+
+.tipo-pessoa label {
+    color: #17a2b8;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.tipo-pessoa select {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.rg {
+    margin-left: 2%;
+    margin-top: 1.5%;
+}
+
+.rg label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #17a2b8;
+}
+
+.rg input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.emissor {
+    margin-left: 20%;
+    margin-top: -5.5%;
+}
+
+.emissor label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #17a2b8;
+}
+
+.emissor input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.email {
+    margin-left: 39%;
+    margin-top: -5.5%;
+}
+
+.email label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #17a2b8;
+}
+
+.email input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 350px;
+}
+
+.celular{
+    margin-left: 73%;
+    margin-top: -5.5%;
+}
+
+.celular label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #17a2b8;
+}
+
+.celular select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 6.5px;
+    width: 75px;
+}
+
+.celular input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 8px;
+    width: 150px;
+}
+
+.ctps {
+    margin-left: 2%;
+    margin-top: 12px;
+}
+
+.ctps label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+    font-size: 15px;
+}
+
+.ctps .input1 {
+    width: 150px;
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.ctps .input2 {
+    width: 250px;
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.uf-data {
+    margin-left: 42%;
+    margin-top: -5.5%;
+}
+
+.uf-data label {
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    color: #17a2b8;
+    font-size: 15px;
+}
+
+.uf-data select {
+    width: 120px;
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.uf-data input {
+    width: 250px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.pis {
+    margin-left: 78%;
+    margin-top: -5.7%;
+}
+
+.pis label {
+    color: #17a2b8;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.pis input {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
 main {
-    height: 170vh;
+    height: 270vh;
     
   }
   
