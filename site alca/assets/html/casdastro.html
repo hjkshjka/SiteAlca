@@ -864,7 +864,7 @@
                         Dados Residenciais
                     </legend>
                     
-                    <div class="CEP">
+                    <div class="cep">
                         <label for="cep">
                             CEP *
                             <br>
@@ -1178,7 +1178,7 @@
                         </label>
                     </div>
 
-                    <div>
+                    <div class="cidade">
                         <label for="cidade">
                             Cidade *
                             <br>
@@ -1186,7 +1186,7 @@
                         </label>
                     </div>
 
-                    <div>
+                    <div class="bairro">
                         <label for="bairro">
                             Bairro
                             <br>
@@ -1254,8 +1254,109 @@
                             </select>
                         </label>
                     </div>
-
                 </fieldset>
+                <br>
+                <div class="dados-acesso-form">
+                    <fieldset>
+                        
+                        <legend>
+                            Dados de acesso
+                        </legend>
+
+                        <div class="sistema">
+                            <label for="sistema">
+                                Sistema Operacional
+                                <br>
+                                <input type="text" placeholder="Digite o sistema operacional">
+                            </label>
+                        </div>
+
+                        <div class="memoria">
+                            <label for="memoria">
+                                Quantidade Memória
+                                <br>
+                                <select id="memoria">
+                                    <option value="#">Selecione</option>
+                                    <option value="#">2gb</option>
+                                    <option value="#">4gb</option>
+                                    <option value="#">6gb</option>
+                                    <option value="#">8gb</option>
+                                    <option value="#">10gb</option>
+                                    <option value="#">12gb</option>
+                                    <option value="#">14gb</option>
+                                    <option value="#">16gb</option>
+                                    <option value="#">32gb</option>
+                                    <option value="#">64gb</option>
+                                    <option value="#">128gb</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="upload">
+                            <label for="upload">
+                                Velocidade Upload
+                                <br>
+                                <input type="text" placeholder="Velocidade Upload ">
+                            </label>
+                        </div>
+
+                        <div class="download">
+                            <label for="download">
+                                Velocidade Download
+                                <br>
+                                <input type="text" placeholder="Velocidade Download">
+                            </label>
+                        </div>
+
+                        <div class="navegador">
+                            <label for="navegador">
+                                Navegador 
+                                <br>
+                                <select id="navegador">
+                                    <option value="#">Selecione</option>
+                                    <option value="#">Google Chrome</option>
+                                    <option value="#">Opera</option>
+                                    <option value="#">Mozila Firefox</option>
+                                    <option value="#">Internet Explorer</option>
+                                    <option value="#">Microsft Edge</option>
+                                    <option value="#">Safari</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="provedor">
+                            <label for="provedor">
+                                Provedor de Internet
+                                <br>
+                                <select id="provedor">
+                                    <option value="#">Selecione</option>
+                                    <option value="#">Tim</option>
+                                    <option value="#">Oi</option>
+                                    <option value="#">Vivo</option>
+                                    <option value="#">Claro</option>
+                                    <option value="#">Outros</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="autenticador">
+                            <label for="autenticador">
+                                Tipo de Autenticador de Contrato
+                                <br>
+                                <select id="autenticador">
+                                    <option value="#">Selecione</option>
+                                    <option value="#">SMS</option>
+                                    <option value="#">E-mail</option>
+                                    <option value="#">Google Authenticator</option>
+                                    <option value="#">Whatsapp</option>
+                                </select>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <button class="save-btn">
+                    Salvar
+                </button>
             </div>
         </form>
     </div>

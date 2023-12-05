@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Figtree:wght@500&family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Figtree:wght@300;500&family=Kanit&family=Oswald:wght@600&display=swap');
 
 * {
     padding: 0;
@@ -241,6 +242,28 @@ li {
     left: 35%;
 }
 
+.card h3 {
+    position: absolute;
+    top: 15%;
+    left: 90%;
+    font-weight: 200;
+}
+
+.card .star {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 75%;
+    top: 15%;
+}   
+
+.card .star-av {
+    position: absolute;
+    top: 16%;
+    left: 78%;
+    font-size: 15px;
+}
+
 .hover-info {
     opacity: 0;
     visibility: hidden;
@@ -273,9 +296,58 @@ iframe {
     
 }
 
+.filter {
+    padding: 40px;
+    justify-content: space-around;
+}
+
+.category {
+    position: absolute;
+    left: 1%;
+    padding: 10px;
+    top: 17%;
+    width: 150px;
+    font-size: 17px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.country {
+    position: absolute;
+    left: 13%;
+    padding: 10px;
+    top: 17%;
+    width: 250px;
+    font-size: 17px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.location {
+    position: absolute;
+    left: 32.7%;
+    padding: 10px;
+    top: 17%;
+    width: 250px;
+    font-size: 17px;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.busca {
+    width: 560px;
+    padding: 12px;
+    position: absolute;
+    left: 53%;
+    top: 17%;
+    position: absolute;
+    font-size: 15px;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+
+
 main {
-    height: 170vh;
-    
+    height: 270vh;
   }
   
   .footer {
@@ -302,5 +374,6 @@ main {
     padding: 0.1rem;
     font-weight: 90;
     color: grey;   
+    font-family: 'Kanit', sans-serif;
   }
   

@@ -474,8 +474,362 @@
     font-weight: bold;
 }
 
+
+.cep {
+    margin-left: 1.5%;
+}
+
+.cep label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.cep input {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    width: 100px;
+}
+
+.logradouro {
+    margin-left: 14%;
+    margin-top: -5.7%;
+}
+
+.logradouro label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.logradouro input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 850px;
+}
+
+.numero-casa {
+    margin-left: 89%;
+    margin-top: -5.7%;
+}
+
+.numero-casa label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.numero-casa input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 100px;
+}
+
+.complemento {
+    margin-left: 1.5%;
+    margin-top: 0.5%;
+}
+
+.complemento label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.complemento input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.pais-endereco {
+    margin-left: 20%;
+    margin-top: -5.6%;
+}
+
+.pais-endereco label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.pais-endereco select {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.estado {
+    margin-left: 50%;
+    margin-top: -5.6%;
+}
+
+.estado label {
+    color: #17a2b8;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.estado select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.cidade {
+    margin-left: 67%;
+    margin-top: -5.6%;
+}
+
+.cidade label {
+    color: #17a2b8;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.cidade input {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    width: 330px;
+}
+
+.bairro {
+    margin-left: 1.5%;
+    margin-top: 1%;
+}
+
+.bairro label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.bairro input {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.recebimento-form fieldset {
+    height: 200px;
+}
+
+.recebimento {
+    margin-left: 1.5%;
+}
+
+.recebimento label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.recebimento select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 250px;
+}
+
+.contador {
+    margin-left: 1.5%;
+    margin-top: 1%;
+}
+
+.contador label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.contador input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 650px;
+}
+
+.recibo-ir {
+    margin-left: 61%;
+    margin-top: -5.4%;
+}
+
+.recibo-ir label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.recibo-ir select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 200px;
+}
+
+.recibo-inss {
+    margin-left: 80%;
+    margin-top: -5.6%;
+}
+
+.recibo-inss label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.recibo-inss select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 200px;
+}
+
+.save-btn {
+    font-family: 'Kanit', sans-serif;
+    color: #fff;
+    background-color: #17a2b8;
+    font-size: 18px;
+    width: 80px;
+    padding: 8px;
+    margin-left: 93.5%;
+    margin-top: 1.5%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.dados-acesso-form fieldset {
+    height: 220px;
+}
+
+.sistema {
+    margin-left: 1.5%;
+}
+
+.sistema label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.sistema input {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    width: 350px;
+}
+
+.memoria {
+    margin-left: 36%;
+    margin-top: -5.5%;
+}
+
+.memoria label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.memoria select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 180px;
+}
+
+.upload {
+    margin-left: 53%;
+    margin-top: -5.5%;
+}
+
+.upload label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.upload input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.download {
+    margin-left: 71%;
+    margin-top: -5.6%;
+}
+
+.download label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.download input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navegador {
+    margin-left: 89%;
+    margin-top: -5.5%;
+}
+
+.navegador label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.navegador select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 120px;
+}
+
+.provedor {
+    margin-left: 1.5%;
+}
+
+.provedor label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.provedor select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 160px;
+}
+
+.autenticador {
+    margin-left: 17.5%;
+    margin-top: -5.6%;
+}
+
+.autenticador label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.autenticador select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 250px;
+}
+
 main {
-    height: 270vh;
+    height: 330vh;
     
   }
   
@@ -497,6 +851,7 @@ main {
   
   #footer-copyright {
     display: flex;
+    font-family: 'Kanit', sans-serif;
     justify-content: center;
     background-color: #ffffff; 
     font-size: 1.4;
